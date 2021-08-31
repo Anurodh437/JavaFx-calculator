@@ -74,11 +74,13 @@ public class Controller {
     public Button button;
     public String output = "",result = "";
     public char ch,sym;
-    public double a = -1,b = -1,c = 0;
+    public double a = -1,b = -1;
     public Label resultField;
     public void handle(ActionEvent event){
         var k = event.getSource();
         ch = k.toString().charAt(k.toString().length() - 2);
+//        System.out.println(k.toString().length());
+//        System.out.println(ch);
         result += ch;
         if (ch == '+' || ch == '-' || ch == '*' || ch == '/')
         {
